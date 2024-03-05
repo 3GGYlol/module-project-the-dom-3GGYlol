@@ -92,7 +92,10 @@ function moduleProject1() {
   
   // 👉 TASK 6 - Make it so user can tab through the widgets
   //  ✨ add your code here
-
+   // add this to test 1: widgets.forEach((widget, idx) => {
+   // widget.classList.add('widget')
+  //  widget.setAttribute('tabindex' , idx + 1 + "")
+ // })  
   // 👆 WORK WORK ABOVE THIS LINE 👆
 }
 
