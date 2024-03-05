@@ -30,7 +30,18 @@ function moduleProject1() {
   
   // 👉 TASK 3 - Build a "Corporate Speak" widget
   //  ✨ add your code here
+   const randomVerb1 = verbs[Math.floor(Math.random() * verbs.length)]
+  const randomVerb2 = verbs[Math.floor(Math.random() * verbs.length)]
+  const randomAdverb1 = adverbs[Math.floor(Math.random() * adverbs.length)]
+  const randomAdverb2 = adverbs[Math.floor(Math.random() * adverbs.length)]
+  const randomNoun1 = nouns[Math.floor(Math.random() * nouns.length)]
+  const randomNoun2 = nouns[Math.floor(Math.random() * nouns.length)]
 
+  const mumboJumbo = `We need to ${randomVerb1} our ${randomNoun1} ${randomAdverb1} in order to ${randomVerb2} our ${randomNoun2} ${randomAdverb2}.`
+  const paragraph = document.createElement('p')
+  paragraph.textContent = mumboJumbo
+  document.querySelector('.corporatespeak').appendChild(paragraph)
+ 
   // 👉 TASK 4 - Build a "Countdown" widget
   //  ✨ add your code here
 
